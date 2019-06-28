@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background: #222;
+    color: #eee;
+}
+
+header {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+main {
+    padding: 2em 2%;
+    column-count: 3;
+    column-gap: 3em;
+    column-rule: 1px solid #eee;
+}
+
+footer {
+    background: cornflowerblue;
+    color: #111;
+    font-size: 1.5rem;
+    padding: 1em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 12px;
+    }
+    main {
+        column-count: 2;
+        column-gap: 2em;
+    }
+}
+@media only screen and (max-width: 567px) {
+    
+    main {
+        column-count: 1;
+    }
+}
